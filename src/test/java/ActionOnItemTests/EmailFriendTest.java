@@ -43,7 +43,7 @@ public class EmailFriendTest extends TestBase {
                 message);
         productEmailAFriendObject.clickOnSendEmail();
 
-        Thread.sleep(7000);
+        Thread.sleep(1000);
 
 
     }
