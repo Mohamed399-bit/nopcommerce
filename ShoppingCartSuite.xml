@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Shopping Product With As GuestUserTest">
+    <!--parameter name="browser" value="chrome-headless"></parameter -->
+    <test name="Shopping Product With As GuestUserTest" preserve-order="true">
+        <classes>
+
+            <class name="ShoppingCartTest.ShoppingProductWithAsGusetUserTest"/>
+
+        </classes>
+    </test>
+</suite>

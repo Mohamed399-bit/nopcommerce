@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Information System About Us And Contact Us ">
+    <!--parameter name="browser" value="chrome-headless"></parameter -->
+    <test name="Information System About Us And Contact Us " preserve-order="true">
+        <classes>
+
+            <class name="InformationSystemTests.AboutUsTest"/>
+            <class name="InformationSystemTests.ContactUsTest"/>
+
+        </classes>
+    </test>
+</suite>

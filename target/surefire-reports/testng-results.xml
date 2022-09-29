@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="18" total="31" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Register New User and login with it " duration-ms="25770" started-at="2022-09-29T12:39:52Z" finished-at="2022-09-29T12:40:18Z">
+    <groups>
+    </groups>
+    <test name="Register New User and login with it  " duration-ms="25770" started-at="2022-09-29T12:39:52Z" finished-at="2022-09-29T12:40:18Z">
+      <class name="RegisterationTest.ChangePasswordTest">
+        <test-method status="PASS" signature="ChangePassword()[pri:4, instance:RegisterationTest.ChangePasswordTest@41ee392b]" name="ChangePassword" duration-ms="5759" started-at="2022-09-29T12:40:03Z" finished-at="2022-09-29T12:40:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChangePassword -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:RegisterationTest.ChangePasswordTest@41ee392b]" name="screenShotOnFailure" is-config="true" duration-ms="1" started-at="2022-09-29T12:40:08Z" finished-at="2022-09-29T12:40:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ChangePassword status=SUCCESS method=ChangePasswordTest.ChangePassword()[pri:4, instance:RegisterationTest.ChangePasswordTest@41ee392b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+      </class> <!-- RegisterationTest.ChangePasswordTest -->
+      <class name="RegisterationTest.LoginWithNewEmailAndNewPasswordTest">
+        <test-method status="PASS" signature="loginWithNewEmailAndNewPassword()[pri:5, instance:RegisterationTest.LoginWithNewEmailAndNewPasswordTest@1e67a849]" name="loginWithNewEmailAndNewPassword" duration-ms="3576" started-at="2022-09-29T12:40:08Z" finished-at="2022-09-29T12:40:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithNewEmailAndNewPassword -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:RegisterationTest.LoginWithNewEmailAndNewPasswordTest@1e67a849]" name="screenShotOnFailure" is-config="true" duration-ms="0" started-at="2022-09-29T12:40:12Z" finished-at="2022-09-29T12:40:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithNewEmailAndNewPassword status=SUCCESS method=LoginWithNewEmailAndNewPasswordTest.loginWithNewEmailAndNewPassword()[pri:5, instance:RegisterationTest.LoginWithNewEmailAndNewPasswordTest@1e67a849] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+      </class> <!-- RegisterationTest.LoginWithNewEmailAndNewPasswordTest -->
+      <class name="RegisterationTest.UpdateAccountInformationTest">
+        <test-method status="PASS" signature="updateAccountInformation()[pri:3, instance:RegisterationTest.UpdateAccountInformationTest@2ea6137]" name="updateAccountInformation" duration-ms="4154" started-at="2022-09-29T12:39:58Z" finished-at="2022-09-29T12:40:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAccountInformation -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:RegisterationTest.UpdateAccountInformationTest@2ea6137]" name="screenShotOnFailure" is-config="true" duration-ms="1" started-at="2022-09-29T12:40:03Z" finished-at="2022-09-29T12:40:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateAccountInformation status=SUCCESS method=UpdateAccountInformationTest.updateAccountInformation()[pri:3, instance:RegisterationTest.UpdateAccountInformationTest@2ea6137] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+      </class> <!-- RegisterationTest.UpdateAccountInformationTest -->
+      <class name="RegisterationTest.RegisterTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:RegisterationTest.RegisterTest@2d2e5f00]" name="startDriver" is-config="true" duration-ms="3894" started-at="2022-09-29T12:39:48Z" finished-at="2022-09-29T12:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="RegisterNewUser()[pri:1, instance:RegisterationTest.RegisterTest@2d2e5f00]" name="RegisterNewUser" duration-ms="4690" started-at="2022-09-29T12:39:52Z" finished-at="2022-09-29T12:39:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterNewUser -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:RegisterationTest.RegisterTest@2d2e5f00]" name="screenShotOnFailure" is-config="true" duration-ms="1" started-at="2022-09-29T12:39:57Z" finished-at="2022-09-29T12:39:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisterNewUser status=SUCCESS method=RegisterTest.RegisterNewUser()[pri:1, instance:RegisterationTest.RegisterTest@2d2e5f00] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:RegisterationTest.RegisterTest@2d2e5f00]" name="closeDriver" is-config="true" duration-ms="573" started-at="2022-09-29T12:40:18Z" finished-at="2022-09-29T12:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- RegisterationTest.RegisterTest -->
+      <class name="RegisterationTest.LoginTest">
+        <test-method status="PASS" signature="loginWithValidUserNameAndPassword()[pri:2, instance:RegisterationTest.LoginTest@4c40b76e]" name="loginWithValidUserNameAndPassword" duration-ms="1650" started-at="2022-09-29T12:39:57Z" finished-at="2022-09-29T12:39:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidUserNameAndPassword -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:RegisterationTest.LoginTest@4c40b76e]" name="screenShotOnFailure" is-config="true" duration-ms="0" started-at="2022-09-29T12:39:58Z" finished-at="2022-09-29T12:39:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithValidUserNameAndPassword status=SUCCESS method=LoginTest.loginWithValidUserNameAndPassword()[pri:2, instance:RegisterationTest.LoginTest@4c40b76e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+      </class> <!-- RegisterationTest.LoginTest -->
+      <class name="RegisterationTest.AddAddressTest">
+        <test-method status="PASS" signature="AddNewAddress()[pri:6, instance:RegisterationTest.AddAddressTest@57d5872c]" name="AddNewAddress" duration-ms="5860" started-at="2022-09-29T12:40:12Z" finished-at="2022-09-29T12:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNewAddress -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:RegisterationTest.AddAddressTest@57d5872c]" name="screenShotOnFailure" is-config="true" duration-ms="1" started-at="2022-09-29T12:40:18Z" finished-at="2022-09-29T12:40:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddNewAddress status=SUCCESS method=AddAddressTest.AddNewAddress()[pri:6, instance:RegisterationTest.AddAddressTest@57d5872c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+      </class> <!-- RegisterationTest.AddAddressTest -->
+    </test> <!-- Register New User and login with it   -->
+  </suite> <!-- Register New User and login with it  -->
+  <suite name="System Test For all Happy Pass " duration-ms="0" started-at="2022-09-29T12:41:18Z" finished-at="2022-09-29T12:41:18Z">
+    <groups>
+    </groups>
+  </suite> <!-- System Test For all Happy Pass  -->
+  <suite name="Shopping Product With As GuestUserTest" duration-ms="14215" started-at="2022-09-29T12:41:03Z" finished-at="2022-09-29T12:41:17Z">
+    <groups>
+    </groups>
+    <test name="Shopping Product With As GuestUserTest" duration-ms="14215" started-at="2022-09-29T12:41:03Z" finished-at="2022-09-29T12:41:17Z">
+      <class name="ShoppingCartTest.ShoppingProductWithAsGusetUserTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:ShoppingCartTest.ShoppingProductWithAsGusetUserTest@161b062a]" name="startDriver" is-config="true" duration-ms="3023" started-at="2022-09-29T12:41:00Z" finished-at="2022-09-29T12:41:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="AddToCart()[pri:0, instance:ShoppingCartTest.ShoppingProductWithAsGusetUserTest@161b062a]" name="AddToCart" duration-ms="14211" started-at="2022-09-29T12:41:03Z" finished-at="2022-09-29T12:41:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:ShoppingCartTest.ShoppingProductWithAsGusetUserTest@161b062a]" name="screenShotOnFailure" is-config="true" duration-ms="1" started-at="2022-09-29T12:41:17Z" finished-at="2022-09-29T12:41:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddToCart status=SUCCESS method=ShoppingProductWithAsGusetUserTest.AddToCart()[pri:0, instance:ShoppingCartTest.ShoppingProductWithAsGusetUserTest@161b062a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:ShoppingCartTest.ShoppingProductWithAsGusetUserTest@161b062a]" name="closeDriver" is-config="true" duration-ms="585" started-at="2022-09-29T12:41:17Z" finished-at="2022-09-29T12:41:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- ShoppingCartTest.ShoppingProductWithAsGusetUserTest -->
+    </test> <!-- Shopping Product With As GuestUserTest -->
+  </suite> <!-- Shopping Product With As GuestUserTest -->
+  <suite name="Actions Items Add to Cart And Add To Wish List And Add To Compare" duration-ms="31469" started-at="2022-09-29T12:40:21Z" finished-at="2022-09-29T12:40:53Z">
+    <groups>
+    </groups>
+    <test name="Actions Items Add to Cart And Add To Wish List And Add To Compare" duration-ms="31469" started-at="2022-09-29T12:40:21Z" finished-at="2022-09-29T12:40:53Z">
+      <class name="ActionOnItemTests.AddToCompareTest">
+        <test-method status="PASS" signature="AddToCompare()[pri:2, instance:ActionOnItemTests.AddToCompareTest@55ca8de8]" name="AddToCompare" duration-ms="4660" started-at="2022-09-29T12:40:30Z" finished-at="2022-09-29T12:40:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCompare -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:ActionOnItemTests.AddToCompareTest@55ca8de8]" name="screenShotOnFailure" is-config="true" duration-ms="0" started-at="2022-09-29T12:40:35Z" finished-at="2022-09-29T12:40:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddToCompare status=SUCCESS method=AddToCompareTest.AddToCompare()[pri:2, instance:ActionOnItemTests.AddToCompareTest@55ca8de8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+      </class> <!-- ActionOnItemTests.AddToCompareTest -->
+      <class name="ActionOnItemTests.EmailFriendTest">
+        <test-method status="PASS" signature="EmailFriend()[pri:4, instance:ActionOnItemTests.EmailFriendTest@12d3a4e9]" name="EmailFriend" duration-ms="11789" started-at="2022-09-29T12:40:41Z" finished-at="2022-09-29T12:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmailFriend -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:ActionOnItemTests.EmailFriendTest@12d3a4e9]" name="screenShotOnFailure" is-config="true" duration-ms="1" started-at="2022-09-29T12:40:53Z" finished-at="2022-09-29T12:40:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EmailFriend status=SUCCESS method=EmailFriendTest.EmailFriend()[pri:4, instance:ActionOnItemTests.EmailFriendTest@12d3a4e9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+      </class> <!-- ActionOnItemTests.EmailFriendTest -->
+      <class name="ActionOnItemTests.AddToWishListTest">
+        <test-method status="PASS" signature="AddToWishList()[pri:3, instance:ActionOnItemTests.AddToWishListTest@2c34f934]" name="AddToWishList" duration-ms="6113" started-at="2022-09-29T12:40:35Z" finished-at="2022-09-29T12:40:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToWishList -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:ActionOnItemTests.AddToWishListTest@2c34f934]" name="screenShotOnFailure" is-config="true" duration-ms="0" started-at="2022-09-29T12:40:41Z" finished-at="2022-09-29T12:40:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddToWishList status=SUCCESS method=AddToWishListTest.AddToWishList()[pri:3, instance:ActionOnItemTests.AddToWishListTest@2c34f934] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+      </class> <!-- ActionOnItemTests.AddToWishListTest -->
+      <class name="ActionOnItemTests.AddToCartTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:ActionOnItemTests.AddToCartTest@2893de87]" name="startDriver" is-config="true" duration-ms="3061" started-at="2022-09-29T12:40:18Z" finished-at="2022-09-29T12:40:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="AddToCart()[pri:1, instance:ActionOnItemTests.AddToCartTest@2893de87]" name="AddToCart" duration-ms="8893" started-at="2022-09-29T12:40:21Z" finished-at="2022-09-29T12:40:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:ActionOnItemTests.AddToCartTest@2893de87]" name="screenShotOnFailure" is-config="true" duration-ms="1" started-at="2022-09-29T12:40:30Z" finished-at="2022-09-29T12:40:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddToCart status=SUCCESS method=AddToCartTest.AddToCart()[pri:1, instance:ActionOnItemTests.AddToCartTest@2893de87] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:ActionOnItemTests.AddToCartTest@2893de87]" name="closeDriver" is-config="true" duration-ms="600" started-at="2022-09-29T12:40:53Z" finished-at="2022-09-29T12:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- ActionOnItemTests.AddToCartTest -->
+    </test> <!-- Actions Items Add to Cart And Add To Wish List And Add To Compare -->
+  </suite> <!-- Actions Items Add to Cart And Add To Wish List And Add To Compare -->
+  <suite name="Information System About Us And Contact Us " duration-ms="2537" started-at="2022-09-29T12:40:57Z" finished-at="2022-09-29T12:40:59Z">
+    <groups>
+    </groups>
+    <test name="Information System About Us And Contact Us " duration-ms="2537" started-at="2022-09-29T12:40:57Z" finished-at="2022-09-29T12:40:59Z">
+      <class name="InformationSystemTests.AboutUsTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:InformationSystemTests.AboutUsTest@5762806e]" name="startDriver" is-config="true" duration-ms="2989" started-at="2022-09-29T12:40:54Z" finished-at="2022-09-29T12:40:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="openAboutUsTest()[pri:1, instance:InformationSystemTests.AboutUsTest@5762806e]" name="openAboutUsTest" duration-ms="716" started-at="2022-09-29T12:40:57Z" finished-at="2022-09-29T12:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAboutUsTest -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:InformationSystemTests.AboutUsTest@5762806e]" name="screenShotOnFailure" is-config="true" duration-ms="0" started-at="2022-09-29T12:40:57Z" finished-at="2022-09-29T12:40:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openAboutUsTest status=SUCCESS method=AboutUsTest.openAboutUsTest()[pri:1, instance:InformationSystemTests.AboutUsTest@5762806e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:InformationSystemTests.AboutUsTest@5762806e]" name="closeDriver" is-config="true" duration-ms="585" started-at="2022-09-29T12:40:59Z" finished-at="2022-09-29T12:41:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- InformationSystemTests.AboutUsTest -->
+      <class name="InformationSystemTests.ContactUsTest">
+        <test-method status="PASS" signature="contactUs()[pri:2, instance:InformationSystemTests.ContactUsTest@17c386de]" name="contactUs" duration-ms="1816" started-at="2022-09-29T12:40:57Z" finished-at="2022-09-29T12:40:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method status="PASS" signature="screenShotOnFailure(org.testng.ITestResult)[pri:0, instance:InformationSystemTests.ContactUsTest@17c386de]" name="screenShotOnFailure" is-config="true" duration-ms="0" started-at="2022-09-29T12:40:59Z" finished-at="2022-09-29T12:40:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=contactUs status=SUCCESS method=ContactUsTest.contactUs()[pri:2, instance:InformationSystemTests.ContactUsTest@17c386de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotOnFailure -->
+      </class> <!-- InformationSystemTests.ContactUsTest -->
+    </test> <!-- Information System About Us And Contact Us  -->
+  </suite> <!-- Information System About Us And Contact Us  -->
+</testng-results>

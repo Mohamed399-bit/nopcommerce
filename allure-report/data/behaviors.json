@@ -1,0 +1,113 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Register Epic",
+    "children" : [ {
+      "name" : "Register Epic",
+      "children" : [ {
+        "name" : "RegisterNewUser",
+        "uid" : "649cdc2eaf74d8d5",
+        "parentUid" : "0b8b17f6c00c19dae212821a31beebbd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664223618605,
+          "stop" : 1664223624300,
+          "duration" : 5695
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "loginWithValidUserNameAndPassword",
+        "uid" : "ddc39ded2bcd79c0",
+        "parentUid" : "0b8b17f6c00c19dae212821a31beebbd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664223624376,
+          "stop" : 1664223626813,
+          "duration" : 2437
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0b8b17f6c00c19dae212821a31beebbd"
+    } ],
+    "uid" : "adef1d2e8bae91a440103958191a2de5"
+  }, {
+    "name" : "Actions Epic",
+    "children" : [ {
+      "name" : "Actions Epic",
+      "children" : [ {
+        "name" : "AddToCart",
+        "uid" : "decb4c0b43090351",
+        "parentUid" : "4b460ae4a254de5cc253acdbcc5c763f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664223630526,
+          "stop" : 1664223638931,
+          "duration" : 8405
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "AddToCompare",
+        "uid" : "7d5a793dc1b3205f",
+        "parentUid" : "4b460ae4a254de5cc253acdbcc5c763f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664223638936,
+          "stop" : 1664223643396,
+          "duration" : 4460
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "AddToWishList",
+        "uid" : "3f4a9f1bdc26f60c",
+        "parentUid" : "4b460ae4a254de5cc253acdbcc5c763f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1664223643403,
+          "stop" : 1664223645674,
+          "duration" : 2271
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4b460ae4a254de5cc253acdbcc5c763f"
+    } ],
+    "uid" : "774b79fc05614a096f1f11a38718f6d4"
+  }, {
+    "name" : "Information System Epic",
+    "children" : [ {
+      "name" : "Information System Epic",
+      "children" : [ {
+        "name" : "openAboutUsTest",
+        "uid" : "d121f588dc38a3ee",
+        "parentUid" : "619cc8ec323a2de90851f23c814de321",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664223649525,
+          "stop" : 1664223651013,
+          "duration" : 1488
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "contactUs",
+        "uid" : "5e21d78075709986",
+        "parentUid" : "619cc8ec323a2de90851f23c814de321",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664223651016,
+          "stop" : 1664223652587,
+          "duration" : 1571
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "619cc8ec323a2de90851f23c814de321"
+    } ],
+    "uid" : "22f5d343aa4f000e360a1f834d0a1410"
+  } ]
+}

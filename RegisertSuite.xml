@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Register New User and login with it ">
+    <!--parameter name="browser" value="chrome-headless"></parameter -->
+    <test name="Register New User and login with it  " preserve-order="true">
+        <classes>
+
+            <class name="RegisterationTest.RegisterTest"/>
+            <class name="RegisterationTest.LoginTest"/>
+            <class name="RegisterationTest.UpdateAccountInformationTest"/>
+            <class name="RegisterationTest.ChangePasswordTest"></class>
+            <class name="RegisterationTest.LoginWithNewEmailAndNewPasswordTest"/>
+            <class name="RegisterationTest.AddAddressTest"/>
+
+        </classes>
+    </test>
+</suite>
