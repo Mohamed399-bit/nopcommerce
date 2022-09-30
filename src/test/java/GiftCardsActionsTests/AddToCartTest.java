@@ -4,15 +4,21 @@ import io.qameta.allure.*;
 import org.testng.annotations.Test;
 import pages.*;
 import tests.TestBase;
+import utilities.Helper;
 
 public class AddToCartTest extends TestBase {
 
     public static String productName = "$50 Physical Gift Card";
+    public static String sender = Helper.generateRandomName(9);
+    public static String message = Helper.generateRandomName(45);
+    public static String recipient = Helper.generateRandomName(12);
+
 
     HomePage homeObject;
     ProductsItemPage productsItemObject;
     ProductDetailsPage productDetailsObject;
     ShoppingPage shoppingObject;
+    GiftDetailsPage giftDetailsObject;
 
     @Test(priority = 1)
     @Severity(SeverityLevel.CRITICAL)
@@ -26,6 +32,9 @@ public class AddToCartTest extends TestBase {
 
         productsItemObject = new ProductsItemPage(driver);
         productsItemObject.ClickOnItemName(productName);
+
+        giftDetailsObject = new GiftDetailsPage(driver);
+        giftDetailsObject.enterGiftInformation(recipient,sender,message);
 
         productDetailsObject = new ProductDetailsPage(driver);
         productDetailsObject.enterQuantity("2");

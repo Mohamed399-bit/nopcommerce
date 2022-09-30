@@ -46,7 +46,7 @@ public class PageBase {
 
     protected void scrollToBottom() {
         //JavascriptExecutor js = (JavascriptExecutor) driver;
-        jse.executeScript("scrollBy(0,1800)");
+        jse.executeScript("scrollBy(0,500)");
     }
 
     public void clickOnButtonUsingJavaScript(WebElement ele){

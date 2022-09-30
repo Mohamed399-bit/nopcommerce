@@ -8,7 +8,7 @@ import utilities.Helper;
 
 public class EmailFriendTest extends TestBase {
 
-    public static String productName = "Levi's 511 Jeans";
+    public static String productName = "Ray Ban Aviator Sunglasses";
     public static String emailFriend = Helper.generateRandomName(8) + "@Test.com";
     public static String message = Helper.generateRandomName(45);
 
@@ -29,7 +29,7 @@ public class EmailFriendTest extends TestBase {
         homeObject.clickOnItem("Apparel");
 
         ApparelObject = new ProductsPage(driver);
-        ApparelObject.clickOnItem("Clothing");
+        ApparelObject.clickOnItem("Accessories");
 
         productsItemObject = new ProductsItemPage(driver);
         productsItemObject.ClickOnItemName(productName);

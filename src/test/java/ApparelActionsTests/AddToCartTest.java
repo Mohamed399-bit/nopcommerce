@@ -7,7 +7,7 @@ import tests.TestBase;
 
 public class AddToCartTest extends TestBase {
 
-    public static String productName = "Levi's 511 Jeans";
+    public static String productName = "Ray Ban Aviator Sunglasses";
 
     HomePage homeObject;
     ProductsPage ApparelObject;
@@ -26,7 +26,7 @@ public class AddToCartTest extends TestBase {
         homeObject.clickOnItem("Apparel");
 
         ApparelObject = new ProductsPage(driver);
-        ApparelObject.clickOnItem("Clothing");
+        ApparelObject.clickOnItem("Accessories");
 
         productsItemObject = new ProductsItemPage(driver);
         productsItemObject.ClickOnItemName(productName);

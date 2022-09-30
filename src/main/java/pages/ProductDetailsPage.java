@@ -1,5 +1,7 @@
 package pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,15 +10,16 @@ import org.testng.Assert;
 public class ProductDetailsPage extends PageBase{
     public ProductDetailsPage(WebDriver driver) {
         super(driver);
+        jse = (JavascriptExecutor)driver;
     }
 
-    @FindBy(id = "product_enteredQuantity_9")
-    WebElement productEnterQuantityTxt;
+    @FindBy(css = "div.add-to-cart-panel")
+    WebElement addToCartPanel;
 
-    @FindBy(id = "add-to-cart-button-9")
-    WebElement addToCartBtn;
+    WebElement qtyLable = addToCartPanel.findElement(By.tagName("input"));
+    WebElement addToCartBtn = addToCartPanel.findElement(By.tagName("button"));
 
-    @FindBy(id = "add-to-wishlist-button-9")
+    @FindBy(css = "div.add-to-wishlist")
     WebElement addToWishListBtn;
 
     @FindBy(css = "div.compare-products")
@@ -31,12 +34,12 @@ public class ProductDetailsPage extends PageBase{
     @FindBy(xpath = "//*[@id=\"bar-notification\"]/div/p/a")
     WebElement compareLink;
 
-    @FindBy(css = "button.button-2.email-a-friend-button")
+    @FindBy(css = "div.email-a-friend")
     WebElement EmailFriendBtn;
 
     public void enterQuantity(String quantity){
-        productEnterQuantityTxt.clear();
-        setTextWebElement(productEnterQuantityTxt,quantity);
+        qtyLable.clear();
+        setTextWebElement(qtyLable,quantity);
     }
 
     public void clickOnAddToCart(){
@@ -44,10 +47,12 @@ public class ProductDetailsPage extends PageBase{
     }
 
     public void clickOnAddToWishList(){
+        scrollToBottom();
         clickButton(addToWishListBtn);
     }
 
     public void clickOnAddToCompare(){
+        scrollToBottom();
         clickButton(addToCompareBtn);
     }
 
