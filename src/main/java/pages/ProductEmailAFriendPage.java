@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ProductEmailAFriendPage extends PageBase{
+public class ProductEmailAFriendPage extends PageBase {
     public ProductEmailAFriendPage(WebDriver driver) {
         super(driver);
     }
@@ -21,14 +21,14 @@ public class ProductEmailAFriendPage extends PageBase{
     @FindBy(name = "send-email")
     WebElement sendEmailBtn;
 
-    public void enterInformationFromEmailFrind(String eFriend , String yEmail , String Message){
+    public void enterInformationFromEmailFrind(String eFriend, String yEmail, String Message) {
 
-        setTextWebElement(friendEmailTxt,eFriend);
-        setTextWebElement(yourEmailAddressTxt,yEmail);
-        setTextWebElement(personalMessageTxt,Message);
+        setTextWebElement(friendEmailTxt, eFriend);
+        setTextWebElement(yourEmailAddressTxt, yEmail);
+        setTextWebElement(personalMessageTxt, Message);
     }
 
-    public void clickOnSendEmail(){
+    public void clickOnSendEmail() {
         clickButton(sendEmailBtn);
     }
 

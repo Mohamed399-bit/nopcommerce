@@ -2,7 +2,10 @@ package JewelryActionsTests;
 
 import io.qameta.allure.*;
 import org.testng.annotations.Test;
-import pages.*;
+import pages.ComparePage;
+import pages.HomePage;
+import pages.ProductDetailsPage;
+import pages.ProductsItemPage;
 import tests.TestBase;
 
 public class AddToCompareTest extends TestBase {
@@ -38,7 +41,6 @@ public class AddToCompareTest extends TestBase {
         homeObject.clickOnLogo();
 
         Thread.sleep(1000);
-
 
 
     }

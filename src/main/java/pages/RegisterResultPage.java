@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-public class RegisterResultPage extends PageBase{
+public class RegisterResultPage extends PageBase {
     public RegisterResultPage(WebDriver driver) {
         super(driver);
     }
@@ -16,12 +16,12 @@ public class RegisterResultPage extends PageBase{
     @FindBy(css = "a.button-1.register-continue-button")
     WebElement continueBtn;
 
-    public void clickOnContinueButton(){
+    public void clickOnContinueButton() {
         clickButton(continueBtn);
     }
 
-    public void verifyFromRegisterUser(String message){
-        Assert.assertEquals(resultLabel.getText(),message);
+    public void verifyFromRegisterUser(String message) {
+        Assert.assertEquals(resultLabel.getText(), message);
         System.out.println("Register Message Is : " + resultLabel.getText());
     }
 }

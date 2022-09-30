@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-public class CheckOutPage extends PageBase{
+public class CheckOutPage extends PageBase {
     public CheckOutPage(WebDriver driver) {
         super(driver);
     }
@@ -52,44 +52,44 @@ public class CheckOutPage extends PageBase{
     @FindBy(xpath = "//*[@id=\"confirm-order-buttons-container\"]/button")
     WebElement confirmBtn;
 
-    public void enterInformationUser(String fName , String lName , String email , String company){
+    public void enterInformationUser(String fName, String lName, String email, String company) {
 
-        setTextWebElement(firstNameTxt,fName);
-        setTextWebElement(lastNameTxt,lName);
-        setTextWebElement(emailTxt,email);
-        setTextWebElement(companyTxt,company);
+        setTextWebElement(firstNameTxt, fName);
+        setTextWebElement(lastNameTxt, lName);
+        setTextWebElement(emailTxt, email);
+        setTextWebElement(companyTxt, company);
     }
 
-    public void enterCountry(int index){
+    public void enterCountry(int index) {
 
         Select country = new Select(countryList);
         country.selectByIndex(index);
     }
 
-    public void enterCityAndAddressAndPhoneNumber(String city , String address ,String zipCode , String phone){
-        setTextWebElement(cityTxt,city);
-        setTextWebElement(address1Txt,address);
-        setTextWebElement(zipCodeTxt,zipCode);
-        setTextWebElement(phoneNumberTxt,phone);
+    public void enterCityAndAddressAndPhoneNumber(String city, String address, String zipCode, String phone) {
+        setTextWebElement(cityTxt, city);
+        setTextWebElement(address1Txt, address);
+        setTextWebElement(zipCodeTxt, zipCode);
+        setTextWebElement(phoneNumberTxt, phone);
     }
 
-    public void clickOnContinueButton(){
+    public void clickOnContinueButton() {
         clickButton(continueBtn);
     }
 
-    public void clickOnContinueForShippingBtn(){
+    public void clickOnContinueForShippingBtn() {
         clickButton(continueForShippingBtn);
     }
 
-    public void clickOnContinueForPaymentMethodBtn(){
+    public void clickOnContinueForPaymentMethodBtn() {
         clickButton(continueForPaymentMethodBtn);
     }
 
-    public void clickOnContinueForPaymentInfo(){
+    public void clickOnContinueForPaymentInfo() {
         clickButton(continueForPaymentInfo);
     }
 
-    public void clickOnConfirmButton(){
+    public void clickOnConfirmButton() {
         clickButton(confirmBtn);
     }
 

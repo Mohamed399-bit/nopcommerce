@@ -6,9 +6,9 @@ import pages.MyAccountPage;
 import pages.changePasswordPage;
 import utilities.Helper;
 
-public class ChangePasswordTest extends TestBase{
+public class ChangePasswordTest extends TestBase {
 
-    public static String newPassword = Helper.generateRandomName(5)+"@12345";
+    public static String newPassword = Helper.generateRandomName(5) + "@12345";
 
     HomePage homeObject;
     MyAccountPage myAccountObject;
@@ -24,11 +24,10 @@ public class ChangePasswordTest extends TestBase{
         myAccountObject.clickOnChangePassword();
 
         changePasswordObject = new changePasswordPage(driver);
-        changePasswordObject.enterNewPassword(RegisterTest.password,newPassword);
+        changePasswordObject.enterNewPassword(RegisterTest.password, newPassword);
         changePasswordObject.clickOnChangePasswordButton();
 
         Thread.sleep(7000);
-
 
 
     }

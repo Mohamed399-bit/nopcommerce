@@ -2,7 +2,10 @@ package GiftCardsActionsTests;
 
 import io.qameta.allure.*;
 import org.testng.annotations.Test;
-import pages.*;
+import pages.HomePage;
+import pages.ProductDetailsPage;
+import pages.ProductEmailAFriendPage;
+import pages.ProductsItemPage;
 import tests.TestBase;
 import utilities.Helper;
 
@@ -35,7 +38,7 @@ public class EmailFriendTest extends TestBase {
 
         productEmailAFriendObject = new ProductEmailAFriendPage(driver);
         productEmailAFriendObject.enterInformationFromEmailFrind(emailFriend,
-                RegisterationTest.UpdateAccountInformationTest.email,message);
+                RegisterationTest.UpdateAccountInformationTest.email, message);
         productEmailAFriendObject.clickOnSendEmail();
 
         Thread.sleep(1000);

@@ -34,7 +34,7 @@ public class TestBase {
         chromePrefs.put("profile.default.content_settings.popups", 0);
         chromePrefs.put("download.default_directory", downloadPath);
         chromePrefs.put("download.prompt_for_download", false);
-       // chromePrefs.put("download.directory_upgrade", false);
+        // chromePrefs.put("download.directory_upgrade", false);
         chromePrefs.put("safebrowsing.enabled", true);
         options.setExperimentalOption("prefs", chromePrefs);
         options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
@@ -54,7 +54,7 @@ public class TestBase {
         } else if (browser.equalsIgnoreCase("firefox")) {
             System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
             driver = new FirefoxDriver();
-        } else if (browser.equalsIgnoreCase("chrome-headless")){
+        } else if (browser.equalsIgnoreCase("chrome-headless")) {
 
             System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
             ChromeOptions options = new ChromeOptions();

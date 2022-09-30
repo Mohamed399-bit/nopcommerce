@@ -34,7 +34,7 @@ public class AddToCartTest extends TestBase {
         productsItemObject.ClickOnItemName(productName);
 
         giftDetailsObject = new GiftDetailsPage(driver);
-        giftDetailsObject.enterGiftInformation(recipient,sender,message);
+        giftDetailsObject.enterGiftInformation(recipient, sender, message);
 
         productDetailsObject = new ProductDetailsPage(driver);
         productDetailsObject.enterQuantity("2");

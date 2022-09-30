@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class ProductsPage extends PageBase{
+public class ProductsPage extends PageBase {
     public ProductsPage(WebDriver driver) {
         super(driver);
     }
@@ -17,13 +17,13 @@ public class ProductsPage extends PageBase{
 
     List<WebElement> items = itemGrid.findElements(By.cssSelector("div.item-box"));
 
-    public void getItemsSize(){
+    public void getItemsSize() {
         System.out.println("Items Size : " + items.size());
     }
 
-    public void clickOnItem(String item){
-        for (WebElement ele : items){
-            if (ele.getText().contains(item)){
+    public void clickOnItem(String item) {
+        for (WebElement ele : items) {
+            if (ele.getText().contains(item)) {
                 clickButton(ele);
                 break;
             }

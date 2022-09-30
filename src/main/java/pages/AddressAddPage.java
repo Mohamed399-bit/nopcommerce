@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-public class AddressAddPage extends PageBase{
+public class AddressAddPage extends PageBase {
     public AddressAddPage(WebDriver driver) {
         super(driver);
     }
@@ -40,29 +40,29 @@ public class AddressAddPage extends PageBase{
     @FindBy(css = "button.button-1.save-address-button")
     WebElement saveBtn;
 
-    public void AddAddressAndEmailAndCompany(String fName, String lName ,String email,String company){
+    public void AddAddressAndEmailAndCompany(String fName, String lName, String email, String company) {
 
-        setTextWebElement(addressFirstNameTxt,fName);
-        setTextWebElement(addressLastNameTxt,lName);
-        setTextWebElement(addressEmailTxt,email);
-        setTextWebElement(addressCompanyTxt,company);
+        setTextWebElement(addressFirstNameTxt, fName);
+        setTextWebElement(addressLastNameTxt, lName);
+        setTextWebElement(addressEmailTxt, email);
+        setTextWebElement(addressCompanyTxt, company);
     }
 
-    public void AddCountry(int index){
+    public void AddCountry(int index) {
 
         Select cont = new Select(addressCountryId);
         cont.selectByIndex(index);
     }
 
-    public void AddCityAndAddressAndZipAndPhone(String city , String address , String zip , String phone){
+    public void AddCityAndAddressAndZipAndPhone(String city, String address, String zip, String phone) {
 
-        setTextWebElement(addressCityTxt,city);
-        setTextWebElement(addressAddress1Txt,address);
-        setTextWebElement(addressZipPostalCodeTxt,zip);
-        setTextWebElement(addressPhoneNumberTxt,phone);
+        setTextWebElement(addressCityTxt, city);
+        setTextWebElement(addressAddress1Txt, address);
+        setTextWebElement(addressZipPostalCodeTxt, zip);
+        setTextWebElement(addressPhoneNumberTxt, phone);
     }
 
-    public void clickOnSaveButton(){
+    public void clickOnSaveButton() {
         clickButton(saveBtn);
     }
 }

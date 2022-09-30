@@ -3,7 +3,7 @@ package tests;
 import org.testng.annotations.Test;
 import pages.*;
 
-public class AddToCompareTest extends TestBase{
+public class AddToCompareTest extends TestBase {
 
     public static String productName = "Lenovo Thinkpad X1 Carbon Laptop";
     HomePage homeObject;
@@ -39,7 +39,6 @@ public class AddToCompareTest extends TestBase{
         homeObject.clickOnLogo();
 
         Thread.sleep(1000);
-
 
 
     }

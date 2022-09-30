@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends PageBase{
+public class LoginPage extends PageBase {
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -20,10 +20,10 @@ public class LoginPage extends PageBase{
     WebElement loginBtn;
 
     @Step("login Step with username: {0} , password: {1} for method : {method} step... ")
-    public void LoginToAccount(String email , String password){
+    public void LoginToAccount(String email, String password) {
 
-        setTextWebElement(emailTxt,email);
-        setTextWebElement(passwordTxt,password);
+        setTextWebElement(emailTxt, email);
+        setTextWebElement(passwordTxt, password);
         clickButton(loginBtn);
     }
 }

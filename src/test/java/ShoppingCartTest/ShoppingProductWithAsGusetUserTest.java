@@ -63,9 +63,9 @@ public class ShoppingProductWithAsGusetUserTest extends TestBase {
         checkoutAsGuestObject.clickOnCheckoutAsGuest();
 
         checkOutObject = new CheckOutPage(driver);
-        checkOutObject.enterInformationUser(fName,lName,email,company);
+        checkOutObject.enterInformationUser(fName, lName, email, company);
         checkOutObject.enterCountry(5);
-        checkOutObject.enterCityAndAddressAndPhoneNumber(city,address,zipCode,phoneNumber);
+        checkOutObject.enterCityAndAddressAndPhoneNumber(city, address, zipCode, phoneNumber);
         checkOutObject.clickOnContinueButton();
         checkOutObject.clickOnContinueForShippingBtn();
         checkOutObject.clickOnContinueForPaymentMethodBtn();

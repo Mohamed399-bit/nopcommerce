@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-public class RegisterPage extends PageBase{
+public class RegisterPage extends PageBase {
     public RegisterPage(WebDriver driver) {
         super(driver);
     }
@@ -48,14 +48,14 @@ public class RegisterPage extends PageBase{
     WebElement registerBtn;
 
     @Step("login Step with First Name: {0} , Last Name: {1} for method : {method} step... ")
-    public void enterGenderAndName(String FName , String LName){
+    public void enterGenderAndName(String FName, String LName) {
         clickButton(genderMaleRadio);
         setTextWebElement(firstNameTxt, FName);
-        setTextWebElement(lastNameTxt,LName);
+        setTextWebElement(lastNameTxt, LName);
     }
 
     @Step("Register Step with data of Birth: {0},month of Birth: {1} , year of Birth: {2}for method : {method} step... ")
-    public void enterDateOfBirth(String day , String month , String year){
+    public void enterDateOfBirth(String day, String month, String year) {
 
         Select dataOfBirth = new Select(dateOfBirthDayList);
         dataOfBirth.selectByVisibleText(day);
@@ -68,22 +68,22 @@ public class RegisterPage extends PageBase{
     }
 
     @Step("Register Step with email: {0} for method : {method} step... ")
-    public void enterEmail(String email){
-        setTextWebElement(emailTxt,email);
+    public void enterEmail(String email) {
+        setTextWebElement(emailTxt, email);
     }
 
     @Step("Register Step with Company name : {0} for method : {method} step... ")
-    public void enterCompanyName(String company){
-        setTextWebElement(companyTxt,company);
+    public void enterCompanyName(String company) {
+        setTextWebElement(companyTxt, company);
     }
 
     @Step("Register Step with password : {0} for method : {method} step... ")
-    public void enterPassword(String password){
-        setTextWebElement(passwordTxt,password);
-        setTextWebElement(confirmPasswordTxt,password);
+    public void enterPassword(String password) {
+        setTextWebElement(passwordTxt, password);
+        setTextWebElement(confirmPasswordTxt, password);
     }
 
-    public void clickOnRegisterButton(){
+    public void clickOnRegisterButton() {
         clickButton(registerBtn);
     }
 

@@ -27,7 +27,6 @@ public class AddToWishListTest extends TestBase {
     public void AddToWishList() throws InterruptedException {
 
 
-
         homeObject = new HomePage(driver);
         homeObject.clickOnItem("Gift Cards");
 
@@ -35,7 +34,7 @@ public class AddToWishListTest extends TestBase {
         productsItemObject.ClickOnItemName(productName);
 
         giftDetailsObject = new GiftDetailsPage(driver);
-        giftDetailsObject.enterGiftInformation(recipient,sender,message);
+        giftDetailsObject.enterGiftInformation(recipient, sender, message);
 
         productDetailsObject = new ProductDetailsPage(driver);
         productDetailsObject.clickOnAddToWishList();

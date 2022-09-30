@@ -12,20 +12,21 @@ package utilities;
 import tests.TestBase;
 
 public class SetURL extends TestBase {
-	
-	public static String  DLSUrlStg = "http://192.168.0.176:8280/login";
-	
-	public static String  IExamUrlStg = "http://192.168.0.176:8480/";
-	
-	 public static void lunchDLS() {
-	        driver.navigate().to(DLSUrlStg);
-	    }
-	    public static void lunchIExam() {
-	        driver.navigate().to(IExamUrlStg);
-	    }
-	
-	public static void refreshPage(){
-	 	driver.navigate().refresh();
-	}
-	
+
+    public static String DLSUrlStg = "http://192.168.0.176:8280/login";
+
+    public static String IExamUrlStg = "http://192.168.0.176:8480/";
+
+    public static void lunchDLS() {
+        driver.navigate().to(DLSUrlStg);
+    }
+
+    public static void lunchIExam() {
+        driver.navigate().to(IExamUrlStg);
+    }
+
+    public static void refreshPage() {
+        driver.navigate().refresh();
+    }
+
 }

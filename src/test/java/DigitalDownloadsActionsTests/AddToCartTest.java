@@ -2,7 +2,10 @@ package DigitalDownloadsActionsTests;
 
 import io.qameta.allure.*;
 import org.testng.annotations.Test;
-import pages.*;
+import pages.HomePage;
+import pages.ProductDetailsPage;
+import pages.ProductsItemPage;
+import pages.ShoppingPage;
 import tests.TestBase;
 
 public class AddToCartTest extends TestBase {

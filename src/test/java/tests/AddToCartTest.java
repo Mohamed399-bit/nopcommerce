@@ -3,7 +3,7 @@ package tests;
 import org.testng.annotations.Test;
 import pages.*;
 
-public class AddToCartTest extends TestBase{
+public class AddToCartTest extends TestBase {
 
     public static String productName = "Lenovo Thinkpad X1 Carbon Laptop";
 
@@ -12,6 +12,7 @@ public class AddToCartTest extends TestBase{
     ProductsItemPage productsItemObject;
     ProductDetailsPage productDetailsObject;
     ShoppingPage shoppingObject;
+
     @Test
     public void AddToCart() throws InterruptedException {
 

@@ -16,7 +16,7 @@ public class AboutUsTest extends TestBase {
     @Description("About Us")
     @Feature("Information System Epic")
     @Epic("Information System Epic")
-    public void openAboutUsTest(){
+    public void openAboutUsTest() {
 
         homeObject = new HomePage(driver);
         homeObject.clickOnAboutUs();

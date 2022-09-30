@@ -7,10 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-public class ProductDetailsPage extends PageBase{
+public class ProductDetailsPage extends PageBase {
     public ProductDetailsPage(WebDriver driver) {
         super(driver);
-        jse = (JavascriptExecutor)driver;
+        jse = (JavascriptExecutor) driver;
     }
 
     @FindBy(css = "div.add-to-cart-panel")
@@ -37,52 +37,52 @@ public class ProductDetailsPage extends PageBase{
     @FindBy(css = "div.email-a-friend")
     WebElement EmailFriendBtn;
 
-    public void enterQuantity(String quantity){
+    public void enterQuantity(String quantity) {
         qtyLable.clear();
-        setTextWebElement(qtyLable,quantity);
+        setTextWebElement(qtyLable, quantity);
     }
 
-    public void clickOnAddToCart(){
+    public void clickOnAddToCart() {
         clickButton(addToCartBtn);
     }
 
-    public void clickOnAddToWishList(){
+    public void clickOnAddToWishList() {
         scrollToBottom();
         clickButton(addToWishListBtn);
     }
 
-    public void clickOnAddToCompare(){
+    public void clickOnAddToCompare() {
         scrollToBottom();
         clickButton(addToCompareBtn);
     }
 
-    public void VerifyThatItemAddToWatchList(String message){
+    public void VerifyThatItemAddToWatchList(String message) {
 
-        Assert.assertEquals(contentMsg.getText(),message);
+        Assert.assertEquals(contentMsg.getText(), message);
         System.out.println("Message is : " + contentMsg.getText());
     }
 
-    public void VerifyThatItemAddToCart(String message){
+    public void VerifyThatItemAddToCart(String message) {
 
-        Assert.assertEquals(contentMsg.getText(),message);
+        Assert.assertEquals(contentMsg.getText(), message);
         System.out.println("Message is : " + contentMsg.getText());
     }
 
-    public void VerifyThatItemAddToCompare(String message){
+    public void VerifyThatItemAddToCompare(String message) {
 
-        Assert.assertEquals(contentMsg.getText(),message);
+        Assert.assertEquals(contentMsg.getText(), message);
         System.out.println("Message is : " + contentMsg.getText());
     }
 
-    public void clickOnClose(){
+    public void clickOnClose() {
         clickButton(closeBtn);
     }
 
-    public void clickOnCompareLink(){
+    public void clickOnCompareLink() {
         clickButton(compareLink);
     }
 
-    public void clickOnEmailFriend(){
+    public void clickOnEmailFriend() {
         clickButton(EmailFriendBtn);
     }
 

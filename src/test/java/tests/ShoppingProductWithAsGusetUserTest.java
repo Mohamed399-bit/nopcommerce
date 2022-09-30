@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import pages.*;
 import utilities.Helper;
 
-public class ShoppingProductWithAsGusetUserTest extends TestBase{
+public class ShoppingProductWithAsGusetUserTest extends TestBase {
 
     public static String productName = "Lenovo Thinkpad X1 Carbon Laptop";
     public static String fName = Helper.generateRandomName(6);
@@ -62,9 +62,9 @@ public class ShoppingProductWithAsGusetUserTest extends TestBase{
         checkoutAsGuestObject.clickOnCheckoutAsGuest();
 
         checkOutObject = new CheckOutPage(driver);
-        checkOutObject.enterInformationUser(fName,lName,email,company);
+        checkOutObject.enterInformationUser(fName, lName, email, company);
         checkOutObject.enterCountry(5);
-        checkOutObject.enterCityAndAddressAndPhoneNumber(city,address,zipCode,phoneNumber);
+        checkOutObject.enterCityAndAddressAndPhoneNumber(city, address, zipCode, phoneNumber);
         checkOutObject.clickOnContinueButton();
         checkOutObject.clickOnContinueForShippingBtn();
         checkOutObject.clickOnContinueForPaymentMethodBtn();

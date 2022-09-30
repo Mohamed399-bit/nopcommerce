@@ -43,7 +43,7 @@ public class AddAddressTest extends TestBase {
         addressObject.clickOnAddNewButton();
 
         addressAddObject = new AddressAddPage(driver);
-        addressAddObject.AddAddressAndEmailAndCompany(fName,lName,email1,company);
+        addressAddObject.AddAddressAndEmailAndCompany(fName, lName, email1, company);
 
         System.out.println("Address FName : " + fName);
         System.out.println("Address LName : " + lName);
@@ -52,7 +52,7 @@ public class AddAddressTest extends TestBase {
 
         addressAddObject.AddCountry(5);
 
-        addressAddObject.AddCityAndAddressAndZipAndPhone(city,address,zip,phone);
+        addressAddObject.AddCityAndAddressAndZipAndPhone(city, address, zip, phone);
         addressAddObject.clickOnSaveButton();
 
         System.out.println("Address city : " + city);

@@ -14,7 +14,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import io.qameta.allure.Step;
 
 public class PageBase {
     public JavascriptExecutor jse;
@@ -49,11 +48,11 @@ public class PageBase {
         jse.executeScript("scrollBy(0,500)");
     }
 
-    public void clickOnButtonUsingJavaScript(WebElement ele){
+    public void clickOnButtonUsingJavaScript(WebElement ele) {
         jse.executeScript("arguments[0].click();", ele);
     }
 
-    public void click(WebElement ele){
+    public void click(WebElement ele) {
         jse.executeScript("arguments[0].click();", ele);
     }
 

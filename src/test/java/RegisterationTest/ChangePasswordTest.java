@@ -5,14 +5,13 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.MyAccountPage;
 import pages.changePasswordPage;
-import tests.RegisterTest;
 import tests.TestBase;
 import utilities.Helper;
 
 public class ChangePasswordTest extends TestBase {
 
-    public static String newPassword = Helper.generateRandomName(5)+"@12345";
-    
+    public static String newPassword = Helper.generateRandomName(5) + "@12345";
+
     HomePage homeObject;
     MyAccountPage myAccountObject;
     changePasswordPage changePasswordObject;
@@ -31,7 +30,7 @@ public class ChangePasswordTest extends TestBase {
         myAccountObject.clickOnChangePassword();
 
         changePasswordObject = new changePasswordPage(driver);
-        changePasswordObject.enterNewPassword(RegisterationTest.RegisterTest.password,newPassword);
+        changePasswordObject.enterNewPassword(RegisterationTest.RegisterTest.password, newPassword);
 
         System.out.println("New Password : " + newPassword);
 
@@ -44,7 +43,6 @@ public class ChangePasswordTest extends TestBase {
         homeObject.clickOnLogOut();
 
         Thread.sleep(1000);
-
 
 
     }

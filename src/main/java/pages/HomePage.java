@@ -9,7 +9,7 @@ import org.testng.Assert;
 
 import java.util.List;
 
-public class HomePage extends PageBase{
+public class HomePage extends PageBase {
     public HomePage(WebDriver driver) {
         super(driver);
         jse = (JavascriptExecutor) driver;
@@ -47,62 +47,63 @@ public class HomePage extends PageBase{
     @FindBy(css = "a.ico-account")
     WebElement myAccountLink;
 
-    public void getItemSize(){
+    public void getItemSize() {
         System.out.println("Item Size : " + items.size());
     }
-    public void clickOnItem(String item){
-        for (WebElement ele : items){
-            if (ele.getText().contains(item)){
+
+    public void clickOnItem(String item) {
+        for (WebElement ele : items) {
+            if (ele.getText().contains(item)) {
                 clickButton(ele);
                 break;
             }
         }
     }
 
-    public void clickOnRegisterLink(){
+    public void clickOnRegisterLink() {
         clickButton(registerLink);
     }
 
-    public void clickOnLogOut(){
+    public void clickOnLogOut() {
         clickButton(logoutLink);
     }
 
-    public void clickOnLoginLink(){
+    public void clickOnLoginLink() {
         clickButton(loginLink);
     }
 
-    public void verifyThatUserLogin(){
+    public void verifyThatUserLogin() {
         Assert.assertTrue(logoutLink.isDisplayed());
         System.out.println("Logout is display : " + logoutLink.isDisplayed());
     }
 
-    public void clickOnAboutUs(){
+    public void clickOnAboutUs() {
 
         scrollToBottom();
         clickButton(aboutUsLink);
 
     }
 
-    public void clickOnContactUs(){
+    public void clickOnContactUs() {
 
         scrollToBottom();
 
         clickButton(contactUsLink);
     }
 
-    public void clickOnWishList(){
+    public void clickOnWishList() {
         clickButton(wishListBtn);
     }
 
-    public void clickOnShoppingCart(){
+    public void clickOnShoppingCart() {
         clickButton(shoppingCartBtn);
     }
 
-    public void clickOnLogo(){
+    public void clickOnLogo() {
         clickButton(logo);
     }
 
-    public void clickOnMyAccount(){
+    public void clickOnMyAccount() {
         clickButton(myAccountLink);
     }
 }

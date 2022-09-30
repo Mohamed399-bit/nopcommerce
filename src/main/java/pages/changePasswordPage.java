@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-public class changePasswordPage extends PageBase{
+public class changePasswordPage extends PageBase {
     public changePasswordPage(WebDriver driver) {
         super(driver);
     }
@@ -28,24 +28,24 @@ public class changePasswordPage extends PageBase{
     @FindBy(css = "span.close")
     WebElement closeBtn;
 
-    public void enterNewPassword(String oldPassword , String newPassword){
+    public void enterNewPassword(String oldPassword, String newPassword) {
 
-        setTextWebElement(oldPasswordTxt,oldPassword);
-        setTextWebElement(newPasswordTxt,newPassword);
-        setTextWebElement(confirmPasswordTxt,newPassword);
+        setTextWebElement(oldPasswordTxt, oldPassword);
+        setTextWebElement(newPasswordTxt, newPassword);
+        setTextWebElement(confirmPasswordTxt, newPassword);
     }
 
-    public void clickOnChangePasswordButton(){
+    public void clickOnChangePasswordButton() {
         clickButton(changePasswordBtn);
     }
 
-    public void VerifyThatUserChangePassword(String Message){
+    public void VerifyThatUserChangePassword(String Message) {
 
-        Assert.assertEquals(successMessage.getText(),Message);
+        Assert.assertEquals(successMessage.getText(), Message);
         System.out.println("Success message After user change password : " + successMessage.getText());
     }
 
-    public void closedMessage(){
+    public void closedMessage() {
         clickButton(closeBtn);
     }
 }

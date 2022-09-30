@@ -3,7 +3,7 @@ package tests;
 import org.testng.annotations.Test;
 import pages.loginPage2;
 
-public class LoginTest1 extends TestBase{
+public class LoginTest1 extends TestBase {
 
     loginPage2 loginObject;
 

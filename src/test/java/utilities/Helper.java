@@ -12,7 +12,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -81,7 +80,7 @@ public class Helper {
         return date1;
     }
 
-    public static String getTodayName(){
+    public static String getTodayName() {
         DateFormat dateFormat = new SimpleDateFormat("EEE");
         Date date = new Date();
         String date1 = dateFormat.format(date);
@@ -117,24 +116,24 @@ public class Helper {
         System.out.println(date1);
         return date1;
     }
-    
-    public static void print(String msg, Object... args) {
-	    try {
-	        java.io.PrintStream ps = new java.io.PrintStream(System.out, true, "UTF-8");
-	        ps.println(String.format(msg, args));
-	    } catch (UnsupportedEncodingException error) {
-	        System.err.println(error);
-	        System.exit(0);
-	    }
-	}
 
-	public static String getCurrentDayName(){
+    public static void print(String msg, Object... args) {
+        try {
+            java.io.PrintStream ps = new java.io.PrintStream(System.out, true, "UTF-8");
+            ps.println(String.format(msg, args));
+        } catch (UnsupportedEncodingException error) {
+            System.err.println(error);
+            System.exit(0);
+        }
+    }
+
+    public static String getCurrentDayName() {
 
         Calendar calendar = Calendar.getInstance();
         Date date = calendar.getTime();
         String day = new SimpleDateFormat("EE", Locale.ENGLISH).format(date.getTime());
         System.out.println(new SimpleDateFormat("EE", Locale.ENGLISH).format(date.getTime()));
-        return  day;
+        return day;
     }
 
 }

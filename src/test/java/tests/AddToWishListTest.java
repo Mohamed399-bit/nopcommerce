@@ -3,7 +3,7 @@ package tests;
 import org.testng.annotations.Test;
 import pages.*;
 
-public class AddToWishListTest extends TestBase{
+public class AddToWishListTest extends TestBase {
 
     public static String productName = "Lenovo Thinkpad X1 Carbon Laptop";
     HomePage homeObject;

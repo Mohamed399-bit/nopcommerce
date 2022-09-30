@@ -41,6 +41,5 @@ public class AddToCompareTest extends TestBase {
         Thread.sleep(1000);
 
 
-
     }
 }

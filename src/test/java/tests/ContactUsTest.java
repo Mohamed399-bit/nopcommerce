@@ -1,14 +1,12 @@
 package tests;
 
-import io.qameta.allure.Step;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ContactUsPage;
 import pages.ContactUsSuccsessPage;
 import pages.HomePage;
 import utilities.Helper;
 
-public class ContactUsTest extends TestBase{
+public class ContactUsTest extends TestBase {
 
     public static String fName = Helper.generateRandomName(6);
     public static String lName = Helper.generateRandomName(7);

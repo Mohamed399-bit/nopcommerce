@@ -12,7 +12,7 @@ public class RegisterTest extends TestBase {
 
     public static String firstName = Helper.generateRandomName(6);
     public static String lastName = Helper.generateRandomName(7);
-    public static String email = Helper.generateRandomName(8) +"@test.com";
+    public static String email = Helper.generateRandomName(8) + "@test.com";
     public static String company = Helper.generateRandomName(9);
     public static String password = "Test@12345";
 
@@ -32,8 +32,8 @@ public class RegisterTest extends TestBase {
         homeObject.clickOnRegisterLink();
 
         registerObject = new RegisterPage(driver);
-        registerObject.enterGenderAndName(firstName,lastName);
-        registerObject.enterDateOfBirth("15","June","1993");
+        registerObject.enterGenderAndName(firstName, lastName);
+        registerObject.enterDateOfBirth("15", "June", "1993");
         registerObject.enterEmail(email);
         System.out.println("Email is : " + email);
         registerObject.enterCompanyName(company);

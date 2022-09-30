@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-public class CheckoutCompletedPage extends PageBase{
+public class CheckoutCompletedPage extends PageBase {
     public CheckoutCompletedPage(WebDriver driver) {
         super(driver);
     }
@@ -16,12 +16,12 @@ public class CheckoutCompletedPage extends PageBase{
     @FindBy(linkText = "Click here for order details.")
     WebElement oderDetailsLink;
 
-    public void VerifyThatOderConfirmed(String message){
-        Assert.assertEquals(successMessage.getText(),message);
+    public void VerifyThatOderConfirmed(String message) {
+        Assert.assertEquals(successMessage.getText(), message);
         System.out.println("Success Message After Complete Oder : " + successMessage.getText());
     }
 
-    public void clickOnOderDetailsLink(){
+    public void clickOnOderDetailsLink() {
         clickButton(oderDetailsLink);
     }
 }

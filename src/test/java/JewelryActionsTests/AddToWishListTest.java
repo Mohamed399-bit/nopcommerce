@@ -2,7 +2,10 @@ package JewelryActionsTests;
 
 import io.qameta.allure.*;
 import org.testng.annotations.Test;
-import pages.*;
+import pages.HomePage;
+import pages.ProductDetailsPage;
+import pages.ProductsItemPage;
+import pages.WishListPage;
 import tests.TestBase;
 
 public class AddToWishListTest extends TestBase {

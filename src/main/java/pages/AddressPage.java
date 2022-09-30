@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-public class AddressPage extends PageBase{
+public class AddressPage extends PageBase {
     public AddressPage(WebDriver driver) {
         super(driver);
     }
@@ -16,11 +16,11 @@ public class AddressPage extends PageBase{
     @FindBy(css = "div.page-title")
     WebElement addressPageTitle;
 
-    public void clickOnAddNewButton(){
+    public void clickOnAddNewButton() {
         clickButton(addNewBtn);
     }
 
-    public void VerifyThatAddressAdded(){
+    public void VerifyThatAddressAdded() {
         Assert.assertTrue(addressPageTitle.isDisplayed());
         System.out.println("Page Title : " + addressPageTitle.getText());
     }

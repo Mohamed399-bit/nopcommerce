@@ -27,20 +27,20 @@ public class UpdateAccountInformationTest extends TestBase {
         homeObject.clickOnMyAccount();
 
         myAccountObject = new MyAccountPage(driver);
-        myAccountObject.updateAccountInformation(fName,lName);
+        myAccountObject.updateAccountInformation(fName, lName);
 
         System.out.println("New First Name : " + fName);
         System.out.println("New Last Name : " + lName);
 
-        myAccountObject.updateBirthDay("20","April","1999");
-        myAccountObject.updateEmailAndCompany(email,company);
+        myAccountObject.updateBirthDay("20", "April", "1999");
+        myAccountObject.updateEmailAndCompany(email, company);
 
         System.out.println("New Email : " + email);
         System.out.println("New Company : " + company);
 
         myAccountObject.clickOnSaveButton();
 
-       // homeObject.clickOnLogOut();
+        // homeObject.clickOnLogOut();
 
         Thread.sleep(2000);
 

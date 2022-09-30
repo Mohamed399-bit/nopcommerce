@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-public class OrderDetailsPage extends PageBase{
+public class OrderDetailsPage extends PageBase {
     public OrderDetailsPage(WebDriver driver) {
         super(driver);
         actions = new Actions(driver);
@@ -22,18 +22,19 @@ public class OrderDetailsPage extends PageBase{
     @FindBy(css = "a.button-2.pdf-invoice-button")
     WebElement PdfInvoiceBtn;
 
-    public void clickOnPrintButton(){
+    public void clickOnPrintButton() {
         clickButton(printBtn);
     }
 
-    public void GetOderDetailsTilePage(){
+    public void GetOderDetailsTilePage() {
         System.out.println(PageTitle.getText());
     }
-    public void clickOnPDFInvoiceButton(){
+
+    public void clickOnPDFInvoiceButton() {
         clickButton(PdfInvoiceBtn);
     }
 
-    public void clickOnEcpButton(WebDriver driver){
+    public void clickOnEcpButton(WebDriver driver) {
         driver.findElement(By.xpath("//body")).sendKeys(Keys.ESCAPE);
     }
 

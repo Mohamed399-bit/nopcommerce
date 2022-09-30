@@ -1,11 +1,11 @@
 package tests;
 
 import org.testng.annotations.Test;
-import pages.ProductsPage;
 import pages.HomePage;
 import pages.ProductsItemPage;
+import pages.ProductsPage;
 
-public class TestItem extends TestBase{
+public class TestItem extends TestBase {
 
     HomePage homeObject;
     ProductsPage computersObject;

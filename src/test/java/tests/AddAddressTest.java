@@ -8,7 +8,7 @@ import pages.HomePage;
 import pages.MyAccountPage;
 import utilities.Helper;
 
-public class AddAddressTest extends TestBase{
+public class AddAddressTest extends TestBase {
 
     public static String fName = Helper.generateRandomName(8);
     public static String lName = Helper.generateRandomName(9);
@@ -42,9 +42,9 @@ public class AddAddressTest extends TestBase{
         addressObject.clickOnAddNewButton();
 
         addressAddObject = new AddressAddPage(driver);
-        addressAddObject.AddAddressAndEmailAndCompany(fName,lName,email1,company);
+        addressAddObject.AddAddressAndEmailAndCompany(fName, lName, email1, company);
         addressAddObject.AddCountry(5);
-        addressAddObject.AddCityAndAddressAndZipAndPhone(city,address,zip,phone);
+        addressAddObject.AddCityAndAddressAndZipAndPhone(city, address, zip, phone);
         addressAddObject.clickOnSaveButton();
 
         Thread.sleep(7000);

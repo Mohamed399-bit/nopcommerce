@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import pages.*;
 import utilities.Helper;
 
-public class EmailFriendTest extends TestBase{
+public class EmailFriendTest extends TestBase {
 
     public static String productName = "Lenovo Thinkpad X1 Carbon Laptop";
     public static String emailFriend = Helper.generateRandomName(8) + "@Test.com";

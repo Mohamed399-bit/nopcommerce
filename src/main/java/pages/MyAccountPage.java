@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-public class MyAccountPage extends PageBase{
+public class MyAccountPage extends PageBase {
     public MyAccountPage(WebDriver driver) {
         super(driver);
     }
@@ -43,23 +43,23 @@ public class MyAccountPage extends PageBase{
     @FindBy(linkText = "Change password")
     WebElement changePasswordLink;
 
-    public void clickOnCustomerLink(){
+    public void clickOnCustomerLink() {
         clickButton(customerInfoLink);
     }
 
-    public void clickOnAddressLink(){
+    public void clickOnAddressLink() {
         clickButton(addressesLink);
     }
 
-    public void updateAccountInformation(String fName , String lName ){
+    public void updateAccountInformation(String fName, String lName) {
 
         clearField(firstNameTxt);
-        setTextWebElement(firstNameTxt,fName);
+        setTextWebElement(firstNameTxt, fName);
         clearField(lastNameTxt);
-        setTextWebElement(lastNameTxt,lName);
+        setTextWebElement(lastNameTxt, lName);
     }
 
-    public void updateBirthDay(String day , String month , String year){
+    public void updateBirthDay(String day, String month, String year) {
 
         Select dataOfBirth = new Select(dateOfBirthDayList);
         dataOfBirth.selectByVisibleText(day);
@@ -71,18 +71,18 @@ public class MyAccountPage extends PageBase{
         yearOfBirth.selectByVisibleText(year);
     }
 
-    public void updateEmailAndCompany(String email , String company){
+    public void updateEmailAndCompany(String email, String company) {
         clearField(emailTxt);
-        setTextWebElement(emailTxt,email);
+        setTextWebElement(emailTxt, email);
         clearField(companyTxt);
-        setTextWebElement(companyTxt,company);
+        setTextWebElement(companyTxt, company);
     }
 
-    public void clickOnSaveButton(){
+    public void clickOnSaveButton() {
         clickButton(saveBtn);
     }
 
-    public void clickOnChangePassword(){
+    public void clickOnChangePassword() {
         clickButton(changePasswordLink);
     }
 

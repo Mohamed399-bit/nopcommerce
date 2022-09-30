@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class ShoppingPage extends PageBase{
+public class ShoppingPage extends PageBase {
     public ShoppingPage(WebDriver driver) {
         super(driver);
     }
@@ -24,25 +24,25 @@ public class ShoppingPage extends PageBase{
     @FindBy(id = "termsofservice")
     WebElement termsOfServiceCheckBox;
 
-    public void getPageTitle(){
+    public void getPageTitle() {
         System.out.println("Page Title is : " + pageTitle.getText());
     }
 
-    public void VerifyThatItemAddToShoppingCart(String item){
+    public void VerifyThatItemAddToShoppingCart(String item) {
 
         List<WebElement> trs = tableItems.findElements(By.tagName("tr"));
 
-        for (WebElement ele : trs){
+        for (WebElement ele : trs) {
             List<WebElement> tds = tableItems.findElements(By.tagName("td"));
             WebElement productName = tds.get(3);
-            if (productName.getText().contains(item)){
+            if (productName.getText().contains(item)) {
                 System.out.println("Product Name is : " + productName.getText());
                 break;
             }
         }
     }
 
-    public void clickOnCheckoutButton(){
+    public void clickOnCheckoutButton() {
         clickButton(termsOfServiceCheckBox);
         clickButton(checkoutBtn);
     }
