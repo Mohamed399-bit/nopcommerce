@@ -10,6 +10,7 @@
             <class name="RegisterationTest.ChangePasswordTest"></class>
             <class name="RegisterationTest.LoginWithNewEmailAndNewPasswordTest"/>
             <class name="RegisterationTest.AddAddressTest"/>
+            <class name="ActionOnItemTests.EmailFriendTest"></class>
 
         </classes>
     </test>

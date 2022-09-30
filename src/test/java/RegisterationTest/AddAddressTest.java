@@ -62,6 +62,9 @@ public class AddAddressTest extends TestBase {
 
         addressObject.VerifyThatAddressAdded();
 
+        homeObject.clickOnLogOut();
+        homeObject.clickOnLogo();
+        
         Thread.sleep(2000);
     }
 }

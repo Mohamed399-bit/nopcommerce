@@ -7,7 +7,7 @@
             <class name="ActionOnItemTests.AddToCartTest"/>
             <class name="ActionOnItemTests.AddToCompareTest"/>
             <class name="ActionOnItemTests.AddToWishListTest"/>
-            <class name="ActionOnItemTests.EmailFriendTest"></class>
+
 
         </classes>
     </test>
