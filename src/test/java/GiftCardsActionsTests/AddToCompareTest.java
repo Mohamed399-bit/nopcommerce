@@ -1,4 +1,4 @@
-package ActionOnItemTests;
+package GiftCardsActionsTests;
 
 import io.qameta.allure.*;
 import org.testng.annotations.Test;
@@ -7,9 +7,8 @@ import tests.TestBase;
 
 public class AddToCompareTest extends TestBase {
 
-    public static String productName = "Lenovo Thinkpad X1 Carbon Laptop";
+    public static String productName = "$50 Physical Gift Card";
     HomePage homeObject;
-    ProductsPage computersObject;
     ProductsItemPage productsItemObject;
     ProductDetailsPage productDetailsObject;
     ComparePage compareObject;
@@ -17,16 +16,13 @@ public class AddToCompareTest extends TestBase {
     @Test(priority = 2)
     @Severity(SeverityLevel.CRITICAL)
     @Description("Add To Compare")
-    @Feature("Actions Epic")
-    @Epic("Actions Epic")
+    @Feature("Gift Cards Actions Epic")
+    @Epic("Gift Cards Actions Epic")
     public void AddToCompare() throws InterruptedException {
 
 
         homeObject = new HomePage(driver);
-        homeObject.clickOnItem("Computers");
-
-        computersObject = new ProductsPage(driver);
-        computersObject.clickOnItem("Notebooks");
+        homeObject.clickOnItem("Gift Cards");
 
         productsItemObject = new ProductsItemPage(driver);
         productsItemObject.ClickOnItemName(productName);

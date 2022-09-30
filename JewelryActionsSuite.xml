@@ -4,10 +4,10 @@
     <test name="Actions Items Add to Cart And Add To Wish List And Add To Compare" preserve-order="true">
         <classes>
 
-            <class name="ActionOnItemTests.AddToCartTest"/>
-            <class name="ActionOnItemTests.AddToCompareTest"/>
-            <class name="ActionOnItemTests.AddToWishListTest"/>
-            <class name="ActionOnItemTests.EmailFriendTest"></class>
+            <class name="JewelryActionsTests.AddToCartTest"/>
+            <class name="JewelryActionsTests.AddToCompareTest"/>
+            <class name="JewelryActionsTests.AddToWishListTest"/>
+            <class name="JewelryActionsTests.EmailFriendTest"></class>
 
         </classes>
     </test>

@@ -1,4 +1,4 @@
-package ActionOnItemTests;
+package DigitalDownloadsActionsTests;
 
 import io.qameta.allure.*;
 import org.testng.annotations.Test;
@@ -7,10 +7,9 @@ import tests.TestBase;
 
 public class AddToCartTest extends TestBase {
 
-    public static String productName = "Lenovo Thinkpad X1 Carbon Laptop";
+    public static String productName = "Night Visions";
 
     HomePage homeObject;
-    ProductsPage computersObject;
     ProductsItemPage productsItemObject;
     ProductDetailsPage productDetailsObject;
     ShoppingPage shoppingObject;
@@ -18,15 +17,12 @@ public class AddToCartTest extends TestBase {
     @Test(priority = 1)
     @Severity(SeverityLevel.CRITICAL)
     @Description("Add To Cart")
-    @Feature("Actions Epic")
-    @Epic("Actions Epic")
+    @Feature("Digital Downloads Actions Epic")
+    @Epic("Digital Downloads Actions Epic")
     public void AddToCart() throws InterruptedException {
 
         homeObject = new HomePage(driver);
-        homeObject.clickOnItem("Computers");
-
-        computersObject = new ProductsPage(driver);
-        computersObject.clickOnItem("Notebooks");
+        homeObject.clickOnItem("Digital downloads");
 
         productsItemObject = new ProductsItemPage(driver);
         productsItemObject.ClickOnItemName(productName);

@@ -1,25 +1,29 @@
-package ActionOnItemTests;
+package ComputersActionsTests;
 
 import io.qameta.allure.*;
 import org.testng.annotations.Test;
 import pages.*;
 import tests.TestBase;
+import utilities.Helper;
 
-public class AddToWishListTest extends TestBase {
+public class EmailFriendTest extends TestBase {
 
     public static String productName = "Lenovo Thinkpad X1 Carbon Laptop";
+    public static String emailFriend = Helper.generateRandomName(8) + "@Test.com";
+    public static String message = Helper.generateRandomName(45);
+
     HomePage homeObject;
     ProductsPage computersObject;
     ProductsItemPage productsItemObject;
     ProductDetailsPage productDetailsObject;
-    WishListPage wishListObject;
+    ProductEmailAFriendPage productEmailAFriendObject;
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     @Severity(SeverityLevel.CRITICAL)
     @Description("Add To Wish List")
-    @Feature("Actions Epic")
-    @Epic("Actions Epic")
-    public void AddToWishList() throws InterruptedException {
+    @Feature("Computers Actions Epic")
+    @Epic("Computers Actions Epic")
+    public void EmailFriend() throws InterruptedException {
 
         homeObject = new HomePage(driver);
         homeObject.clickOnItem("Computers");
@@ -31,21 +35,15 @@ public class AddToWishListTest extends TestBase {
         productsItemObject.ClickOnItemName(productName);
 
         productDetailsObject = new ProductDetailsPage(driver);
-        productDetailsObject.clickOnAddToWishList();
-        productDetailsObject.VerifyThatItemAddToWatchList("The product has been added to your wishlist");
-        productDetailsObject.clickOnClose();
+        productDetailsObject.clickOnEmailFriend();
+
+        productEmailAFriendObject = new ProductEmailAFriendPage(driver);
+        productEmailAFriendObject.enterInformationFromEmailFrind(emailFriend,
+                RegisterationTest.UpdateAccountInformationTest.email,message);
+        productEmailAFriendObject.clickOnSendEmail();
 
         Thread.sleep(1000);
 
-        homeObject.clickOnWishList();
-
-        wishListObject = new WishListPage(driver);
-        wishListObject.getPageTitle();
-        wishListObject.VerifyThatItemAddToWishList(productName);
-
-        Thread.sleep(1000);
-
-        homeObject.clickOnLogo();
 
     }
 }
