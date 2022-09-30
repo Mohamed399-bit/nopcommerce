@@ -64,7 +64,7 @@ public class AddAddressTest extends TestBase {
 
         homeObject.clickOnLogOut();
         homeObject.clickOnLogo();
-        
+
         Thread.sleep(2000);
     }
 }

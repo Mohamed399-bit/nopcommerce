@@ -18,7 +18,7 @@ public class EmailFriendTest extends TestBase {
     ProductDetailsPage productDetailsObject;
     ProductEmailAFriendPage productEmailAFriendObject;
 
-    @Test(priority = 4)
+    @Test(priority = 7)
     @Severity(SeverityLevel.CRITICAL)
     @Description("Add To Wish List")
     @Feature("Actions Epic")
