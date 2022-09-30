@@ -18,7 +18,7 @@ public class EmailFriendTest extends TestBase {
     ProductDetailsPage productDetailsObject;
     ProductEmailAFriendPage productEmailAFriendObject;
 
-    @Test(priority = 7)
+    @Test(priority = 4)
     @Severity(SeverityLevel.CRITICAL)
     @Description("Add To Wish List")
     @Feature("Actions Epic")
@@ -39,8 +39,7 @@ public class EmailFriendTest extends TestBase {
 
         productEmailAFriendObject = new ProductEmailAFriendPage(driver);
         productEmailAFriendObject.enterInformationFromEmailFrind(emailFriend,
-                RegisterationTest.UpdateAccountInformationTest.email,
-                message);
+                RegisterationTest.UpdateAccountInformationTest.email,message);
         productEmailAFriendObject.clickOnSendEmail();
 
         Thread.sleep(1000);
