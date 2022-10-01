@@ -71,7 +71,7 @@ public class TestBase {
         allureEnvironmentWriter(
                 ImmutableMap.<String, String>builder()
                         .put("Browser", "Chrome")
-                        .put("Browser.Version", "100")
+                        .put("Browser.Version", "106.0.5249.91")
                         .put("URL", "https://demo.nopcommerce.com/")
                         .build(), System.getProperty("user.dir")
                         + "/allure-results/");
