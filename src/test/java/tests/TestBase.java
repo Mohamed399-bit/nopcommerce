@@ -9,6 +9,7 @@
 package tests;
 
 import com.google.common.collect.ImmutableMap;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -46,13 +47,13 @@ public class TestBase {
     @Parameters({"browser"})
     public void startDriver(@Optional("chrome") String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(chromeOption());
         } else if (browser.equalsIgnoreCase("opera")) {
-            System.setProperty("webdriver.opera.driver", System.getProperty("user.dir") + "\\drivers\\operadriver.exe");
+            WebDriverManager.operadriver().setup();
             driver = new OperaDriver();
         } else if (browser.equalsIgnoreCase("firefox")) {
-            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
+            WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         } else if (browser.equalsIgnoreCase("chrome-headless")) {
 
